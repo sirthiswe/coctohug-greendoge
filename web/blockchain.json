@@ -1,0 +1,7 @@
+{
+  "blockchain": "greendoge",
+  "binary": "/greendoge-blockchain/venv/bin/greendoge",
+  "mainnet": ".greendoge/mainnet",
+  "config": ".greendoge/mainnet/config/config.yaml",
+  "webLogLevel": "error"
+}

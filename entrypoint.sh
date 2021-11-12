@@ -2,7 +2,7 @@
 #  Configure and start plotting and farming services.
 #
 
-echo "Welcome to coctohug-greendoge!"
+echo "Welcome to coctohug-${blockchain}!"
 
 if [[ -z "${worker_address}" ]]; then
   echo "Please set the 'worker_address' environment variable to this system's IP address on your LAN."

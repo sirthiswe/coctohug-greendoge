@@ -1,10 +1,10 @@
 # the greendoge hand
 - greendoge specific docker
-- watchdog with worker mode
+- log parser
 
 # build
-- sudo docker build --no-cache --build-arg GREENDOGE_BRANCH=1.2.10 -t coctohug-greendoge:latest .
-- sudo docker build --build-arg GREENDOGE_BRANCH=1.2.10 -t coctohug-greendoge:latest .
+- sudo docker build --no-cache --build-arg CODE_BRANCH=1.2.10 -t coctohug-greendoge:latest .
+- sudo docker build --build-arg CODE_BRANCH=1.2.10 -t coctohug-greendoge:latest .
 
 # docker-compose
 - coctohug-greendoge: 
@@ -18,10 +18,11 @@
             - "/mnt/disk2:/plots2" 
         environment: 
             - mode=fullnode 
-            - worker_address=192.168.1.74 
+            - controller_address=192.168.1.74 
+            - worker_address=192.168.1.74
             - plots_dir=/plots1:/plots2 
-            - blockchains=greendoge 
         ports: 
+            - 12638:12638 
             - 6544:6544 
             - 6547:6547
 
