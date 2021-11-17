@@ -3,6 +3,7 @@
   "binary": "/greendoge-blockchain/venv/bin/greendoge",
   "mainnet": ".greendoge/mainnet",
   "config": ".greendoge/mainnet/config/config.yaml",
+  "chainlog": ".greendoge/mainnet/log/debug.log",
   "webLogLevel": "error",
   "webLogFile": ".greendoge/web.log",
   "watchDogLogLevel": "error",
