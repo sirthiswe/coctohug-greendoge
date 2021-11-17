@@ -22,7 +22,7 @@ RUN \
 		/var/tmp/*
 
 # Provide a colon-separated list of in-container paths to your mnemonic keys
-ENV keys="/root/.chia/mnemonic.txt"  
+ENV keys="/root/.coctohug/mnc.txt"  
 # Provide a colon-separated list of in-container paths to your completed plots
 ENV plots_dir="/plots"
 # One of fullnode, farmer, harvester, plotter, farmer+plotter, harvester+plotter. Default is fullnode
